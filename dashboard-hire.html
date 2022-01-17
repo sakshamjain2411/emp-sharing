@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Emp Sharing</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="img/logo.svg" alt="" srcset="" class="logo">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOW IT WORKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MEMBERSHIP</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="btn btn-secondary">
+                            <a href="">EMPLOYER SIGN UP</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="btn btn-primary">
+                            <a href="">EMPLOYER SIGN UP</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="dashboard-hire">
+        <div class="dashboard-header flex-box">
+            <div class="content-box mx-auto">
+                <h3>I WANT TO HIRE</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu arcu tortor. Nulla non arcu eu dolor tincidunt rhoncus.</p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="buttons-box">
+                <button class="bg-yellow">Add Resource</button>
+            </div>
+        </div>
+        <div class="dashboard-container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="sidebar-navigation">
+                        <ul>
+                            <li>
+                                <div class="empty-block"></div>
+                                <p>Active Resources</p>
+                            </li>
+                            <li>
+                                <div class="empty-block"></div>
+                                <p>Hiring Process</p>
+                            </li>
+                            <li>
+                                <div class="empty-block"></div>
+                                <p>Past History</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="dashboard-filters">
+                        <div class="heading">
+                            <h3>
+                                Shared Resources
+                            </h3>
+                        </div>
+                        <div class="filters">
+                            <form action="">
+                                <input type="text" placeholder="Employee name">
+                                <input type="text" placeholder="Hired by">
+                                <input type="text" placeholder="Location">
+                            </form>
+                            <button class="flex-box"><i class="fas fa-search"></i></button>
+                            <button class="offcanvas-filter-button flex-box"><i class="fas fa-filter"></i></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="dashboard-resources">
+                                <div class="resources-details-one flex-box">
+                                    <div class="resource-image">
+                                        <img class="resource-img" src="img/emp1.png" alt="">
+                                        <div class="resource-rating">4.5 <img src="img/ionic-ios-star.png" alt=""></div>
+                                    </div>
+                                    <div class="resource-detail">
+                                        <h4 class="name">John Smith <div class="experience">2 Year of Exp</div></h4>
+                                        <h4 class="role">Flutter Developer</h4>
+                                        <h4 class="location"><i class="fas fa-map-marker-alt"></i> Mumbai, India</h4>
+                                        <h4 class="messages"><i class="far fa-comment-alt"></i> 2<span class="hires">Completed hires 2</span></h4>
+                                        <button class="message-button">Messages <span>2</span></button>
+                                    </div>
+                                    <div class="resource-rate-per-hour">
+                                        <h4 class="hour-per-week">60 hours per week</h4>
+                                        <div class="rate-per-hour">
+                                            <div class="text-content">
+                                                <h4>10$</h4>
+                                                <p>per hour</p>
+                                            </div>
+                                            <button>Hired</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="resource-skills flex-box">
+                                    <div class="skill">UI Designer</div>
+                                    <div class="skill">Html</div>
+                                    <div class="skill">Css</div>
+                                    <div class="skill">Wireframing</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="dashboard-resources">
+                                <div class="resources-details-one flex-box">
+                                    <div class="resource-image">
+                                        <img class="resource-img" src="img/emp1.png" alt="">
+                                        <div class="resource-rating">4.5 <img src="img/ionic-ios-star.png" alt=""></div>
+                                    </div>
+                                    <div class="resource-detail">
+                                        <h4 class="name">John Smith <span class="experience">2 Year of Exp</span></h4>
+                                        <h4 class="role">Flutter Developer</h4>
+                                        <h4 class="location"><i class="fas fa-map-marker-alt"></i> Mumbai, India</h4>
+                                        <h4 class="messages"><i class="far fa-comment-alt"></i> 2<span class="hires">Completed hires 2</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
