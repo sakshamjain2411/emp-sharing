@@ -1313,6 +1313,229 @@ button {
     }
 }
 
+.user-profile {
+    .profile-background {
+        max-width: 1700px;
+        min-height: 260px;
+        background-color: #212121;
+        padding: 20px 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    button {
+        background-color: #15CE73;
+        font-size: 16px;
+        &.change-background {
+            height: 38px;
+            width: 38px;
+            color: white;
+            border-radius: 50%;
+            padding: 0px;
+        }
+        &.edit {
+            border-radius: 5px;
+            margin-left: 20px;
+            padding: 5px 25px;
+        }
+    }
+    .profile-container {
+        padding: 25px 40px;
+        max-width: 1400px;
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .section-text {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 0px;
+        }
+        .profile-details {
+            min-height: 700px;
+            background-color: white;
+            box-shadow: #00000040 0px 0px 12px;
+            border-radius: 10px;
+            padding: 25px 30px;
+            margin-top: -35%;
+            margin-bottom: 25px;
+            hr {
+                height: 2px;
+                width: 100%;
+                background-color: #E1DFDF;
+                margin: 12px 0px
+            }
+            .profile-status {
+                display: flex;
+                justify-content: flex-end;
+                .status {
+                    font-size: 12px;
+                    color: white;
+                    padding: 4px 13px;
+                    border-radius: 5px;
+                }
+            }
+            .profile-picture {
+                position: relative;
+                img {
+                    height: 168px;
+                    width: 168px;
+                    border-radius: 50%;
+                    border: 1px solid black;  
+                }
+                .change-profile-picture {
+                    position: absolute;
+                    padding: 0px;
+                    height: 34px;
+                    width: 34px;
+                    color: white;
+                    background-color: #22219C;
+                    border-radius: 50%;
+                    bottom: 0;
+                    left: calc(50% + 30px);
+                }
+            }
+            .profile-main-details {
+                margin-top: 27px;
+                .name {
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                }
+                .rating {
+                    font-size: 17px;
+                }
+            }
+            .profile-sub-details {
+                .section-title {
+                    text-transform: capitalize;
+                }
+            }
+            .profile-message-button {
+                background-color: #15CE73;
+                width: 100%;
+                padding: 14px;
+                margin: 65px 0px 10px;
+            }
+        }
+        .profile-about,
+        .profile-reviews {
+            min-height: 400px;
+            background-color: white;
+            box-shadow: #00000040 0px 0px 12px;
+            border-radius: 10px;
+            padding: 25px 30px;
+        }
+        .profile-about {
+            .skills {
+                display: flex;
+                flex-wrap: wrap;
+                .skill {
+                    font-size: 16px;
+                    border: 1px solid #707070;
+                    border-radius: 16px;
+                    padding: 4px 20px;
+                    text-transform: capitalize;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .profile-reviews {
+            margin-top: 25px;
+            hr {
+                height: 1px;
+                background-color: #707070;
+                width: 90%;
+            }
+            .review-box {
+                display: flex;
+                margin: 30px 0px;
+                .reviewer-image {
+                    img {
+                        height: 52px;
+                        width: 52px;
+                        border-radius: 50%;
+                    }
+                }
+                .review-data {
+                    padding: 0px 10px;
+                    .reviewer-details {
+                        .name {
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                        .designation {
+                            font-size: 13px;
+                        }
+                        .review-date {
+                            font-size: 13px;
+                            float: right;
+                        }
+                    }
+                    .review {
+                        margin-top: 20px;
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .table-pagination {
+                display: flex;
+                justify-content: center;
+                button {
+                    background-color: white;
+                    border: 1px solid #000;
+                    color: #000;
+                    padding: 0px;
+                    height: 44px;
+                    width: 44px;
+                    margin: 0px 5px;
+                    &.active {
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .profile-similar {
+            padding: 25px 0px 25px 30px;
+            hr {
+                background-color: #878484;
+                height: 3px;
+            }
+            .similar-box {
+                display: flex;
+                align-items: center;
+                margin-bottom: 23px;
+                .user-image {
+                    img {
+                        height: 52px;
+                        width: 52px;
+                        border-radius: 50%;
+                    }
+                }
+                .user-details {
+                    padding: 0px 10px;
+                    h2 {
+                        font-size: 16px;
+                        margin-bottom: 0px;
+                    }
+                    p {
+                        font-size: 13px;
+                        margin-bottom: 0px;
+                    }
+                    .designation {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 450px) {
     .resources .content {
         padding: 40px 20px 30px;
@@ -1384,5 +1607,8 @@ button {
     }
     .dashboard-container .dashboard-resources .resource-skills .skill {
         margin: 0px 5px 0px 0px;
+    }
+    .user-profile .profile-container .profile-similar {
+        padding: 25px 10px;
     }
 }
