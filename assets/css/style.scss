@@ -894,6 +894,35 @@ button {
     }
 }
 
+.dashboard-navbar {
+    display: flex;
+    flex-direction: column;
+    form {
+        margin-bottom: 20px;
+        input[type="text"] {
+            height: 50px;
+            border-radius: 5px;
+            padding: 14px 24px;
+            border: 1px solid #878484;
+        }
+        input[type="text"]:first-child {
+            width: 400px;
+        }
+        button {
+            height: 50px;
+            padding: 0px 30px;
+        }
+    }
+    .nav-icons {
+        margin-left: 50px;
+        margin-bottom: 20px;
+        span {
+            padding: 0px 15px;
+            font-size: 18px;
+        }
+    }
+}
+
 .dashboard {
     .container {
         .content-box {
