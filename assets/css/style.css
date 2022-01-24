@@ -1462,6 +1462,10 @@ button {
   padding-left: 0px;
 }
 
+.dashboard-container .sidebar-navigation ul a {
+  font-weight: 400;
+}
+
 .dashboard-container .sidebar-navigation ul li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1475,6 +1479,14 @@ button {
   margin-bottom: 5px;
 }
 
+.dashboard-container .sidebar-navigation ul li.active {
+  background-color: #24130C;
+}
+
+.dashboard-container .sidebar-navigation ul li.active p {
+  color: white;
+}
+
 .dashboard-container .sidebar-navigation ul li .empty-block {
   height: 50px;
   width: 50px;
@@ -1484,7 +1496,7 @@ button {
 .dashboard-container .sidebar-navigation ul li p {
   font-size: 19px;
   margin-bottom: 0px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .dashboard-container .dashboard-filters {
@@ -1563,6 +1575,11 @@ button {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+}
+
+.dashboard-container .dashboard-resources .resources-details-one.saved-resources {
+  padding: 55px 35px 35px;
 }
 
 .dashboard-container .dashboard-resources .resources-details-one .resource-image {
@@ -1665,6 +1682,10 @@ button {
   padding: 12px;
 }
 
+.dashboard-container .dashboard-resources .resources-details-one .resource-rate-per-hour .rate-per-hour .text-content.saved-resources {
+  padding: 24px 12px;
+}
+
 .dashboard-container .dashboard-resources .resources-details-one .resource-rate-per-hour .rate-per-hour .text-content h4 {
   font-size: 17px;
   font-weight: 600;
@@ -1682,6 +1703,19 @@ button {
   border-radius: 0px;
   font-size: 15px;
   padding: 0px 17px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-one .resource-saved-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F6F9FC;
+}
+
+.dashboard-container .dashboard-resources .resources-details-one .resource-saved-banner p {
+  font-size: 15px;
+  margin-bottom: 0px;
+  padding: 10px 20px;
 }
 
 .dashboard-container .dashboard-resources .resources-details-two {

@@ -27,26 +27,38 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse dashboard-navbar" id="navbarSupportedContent">
+                <div class="nav-form flex-box">
+                    <form action="">
+                        <input type="text" placeholder="Android developer, UI Designer...">
+                        <input type="text" placeholder="Location">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                    <div class="nav-icons">
+                        <span><i class="far fa-envelope"></i></span>
+                        <span><i class="far fa-question-circle"></i></span>
+                        <span><i class="far fa-bell"></i></span>
+                        <span><i class="far fa-user"></i></span>
+                    </div>
+                </div>
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="dashboard.html">DASHBOARD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">HOW IT WORKS</a>
+                        <a class="nav-link" aria-current="page" href="dashboard-shared-resources.html">I WANT TO SHARE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">MEMBERSHIP</a>
+                        <a class="nav-link" aria-current="page" href="dashboard-active-resources.html">I WANT TO HIRE</a>
                     </li>
                     <li class="nav-item">
-                        <div class="btn btn-secondary">
-                            <a href="">EMPLOYER SIGN UP</a>
-                        </div>
+                        <a class="nav-link" aria-current="page" href="#">I WANT TO TRADE</a>
                     </li>
                     <li class="nav-item">
-                        <div class="btn btn-primary">
-                            <a href="">EMPLOYER SIGN UP</a>
-                        </div>
+                        <a class="nav-link" aria-current="page" href="#">POST JOB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">POST PROJECT</a>
                     </li>
                 </ul>
             </div>
@@ -70,22 +82,30 @@
                 <div class="col-lg-3">
                     <div class="sidebar-navigation">
                         <ul>
-                            <li>
-                                <div class="empty-block"></div>
-                                <p>Shared Resources</p>
-                            </li>
-                            <li>
-                                <div class="empty-block"></div>
-                                <p>Shared Resources</p>
-                            </li>
-                            <li>
-                                <div class="empty-block"></div>
-                                <p>Shared Resources</p>
-                            </li>
-                            <li>
-                                <div class="empty-block"></div>
-                                <p>Shared Resources</p>
-                            </li>
+                            <a href="dashboard-shared-resources.html">
+                                <li>
+                                    <div class="empty-block"></div>
+                                    <p>Shared Resources</p>
+                                </li>
+                            </a>
+                            <a href="dashboard-saved-resources.html">
+                                <li>
+                                    <div class="empty-block"></div>
+                                    <p>Saved Resources</p>
+                                </li>
+                            </a>
+                            <a href="dashboard-posted-resources.html">
+                                <li>
+                                    <div class="empty-block"></div>
+                                    <p>Posted Resources</p>
+                                </li>
+                            </a>
+                            <a href="dashboard-resource-history.html">
+                                <li class="active">
+                                    <div class="empty-block"></div>
+                                    <p>Resource History</p>
+                                </li>
+                            </a>
                         </ul>
                     </div>
                 </div>
@@ -93,7 +113,7 @@
                     <div class="dashboard-filters">
                         <div class="heading">
                             <h3>
-                                Shared Resources
+                                Resource History
                             </h3>
                         </div>
                         <div class="filters">

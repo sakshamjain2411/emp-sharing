@@ -27,36 +27,48 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse dashboard-navbar" id="navbarSupportedContent">
+                <div class="nav-form flex-box">
+                    <form action="">
+                        <input type="text" placeholder="Android developer, UI Designer...">
+                        <input type="text" placeholder="Location">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                    <div class="nav-icons">
+                        <span><i class="far fa-envelope"></i></span>
+                        <span><i class="far fa-question-circle"></i></span>
+                        <span><i class="far fa-bell"></i></span>
+                        <span><i class="far fa-user"></i></span>
+                    </div>
+                </div>
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="dashboard.html">DASHBOARD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">HOW IT WORKS</a>
+                        <a class="nav-link" aria-current="page" href="dashboard-shared-resources.html">I WANT TO SHARE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">MEMBERSHIP</a>
+                        <a class="nav-link" aria-current="page" href="dashboard-active-resources.html">I WANT TO HIRE</a>
                     </li>
                     <li class="nav-item">
-                        <div class="btn btn-secondary">
-                            <a href="">EMPLOYER SIGN UP</a>
-                        </div>
+                        <a class="nav-link" aria-current="page" href="#">I WANT TO TRADE</a>
                     </li>
                     <li class="nav-item">
-                        <div class="btn btn-primary">
-                            <a href="">EMPLOYER SIGN UP</a>
-                        </div>
+                        <a class="nav-link" aria-current="page" href="#">POST JOB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">POST PROJECT</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="dashboard-hire">
+    <section class="dashboard-share">
         <div class="dashboard-header flex-box">
             <div class="content-box mx-auto">
-                <h3>I WANT TO HIRE</h3>
+                <h3>I WANT TO SHARE</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu arcu tortor. Nulla non arcu eu dolor tincidunt rhoncus.</p>
             </div>
         </div>
@@ -70,18 +82,30 @@
                 <div class="col-lg-3">
                     <div class="sidebar-navigation">
                         <ul>
-                            <li>
-                                <div class="empty-block"></div>
-                                <p>Active Resources</p>
-                            </li>
-                            <li>
-                                <div class="empty-block"></div>
-                                <p>Hiring Process</p>
-                            </li>
-                            <li>
-                                <div class="empty-block"></div>
-                                <p>Past History</p>
-                            </li>
+                            <a href="dashboard-shared-resources.html">
+                                <li class="active">
+                                    <div class="empty-block"></div>
+                                    <p>Shared Resources</p>
+                                </li>
+                            </a>
+                            <a href="dashboard-saved-resources.html">
+                                <li>
+                                    <div class="empty-block"></div>
+                                    <p>Saved Resources</p>
+                                </li>
+                            </a>
+                            <a href="dashboard-posted-resources.html">
+                                <li>
+                                    <div class="empty-block"></div>
+                                    <p>Posted Resources</p>
+                                </li>
+                            </a>
+                            <a href="dashboard-resource-history.html">
+                                <li>
+                                    <div class="empty-block"></div>
+                                    <p>Resource History</p>
+                                </li>
+                            </a>
                         </ul>
                     </div>
                 </div>
@@ -104,7 +128,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="dashboard-resources">
+                            <div class="dashboard-resources type-share">
                                 <div class="resources-details-one flex-box">
                                     <div class="resource-image">
                                         <img class="resource-img" src="img/emp1.png" alt="">
@@ -115,29 +139,56 @@
                                         <h4 class="role">Flutter Developer</h4>
                                         <h4 class="location"><i class="fas fa-map-marker-alt"></i> Mumbai, India</h4>
                                         <h4 class="messages"><i class="far fa-comment-alt"></i> 2<span class="hires">Completed hires 2</span></h4>
-                                        <button class="message-button">Messages <span>2</span></button>
-                                    </div>
-                                    <div class="resource-rate-per-hour">
-                                        <h4 class="hour-per-week">60 hours per week</h4>
-                                        <div class="rate-per-hour">
-                                            <div class="text-content">
-                                                <h4>10$</h4>
-                                                <p>per hour</p>
-                                            </div>
-                                            <button>Hired</button>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="resource-skills flex-box">
-                                    <div class="skill">UI Designer</div>
-                                    <div class="skill">Html</div>
-                                    <div class="skill">Css</div>
-                                    <div class="skill">Wireframing</div>
+                                <div class="resources-details-two">
+                                    <div class="resource-detail">
+                                        <div class="box">
+                                            <p>Stark America Amer...</p>
+                                            <p>Hired on Mar 25 20</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>Hired by James Jam...</p>
+                                            <p>Shared</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>Apr 1 20 to Apr 20 20</p>
+                                            <p>$10 Per Hour</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>30 hours per week</p>
+                                            <div class="message"><i class="far fa-envelope"></i><div class="count bg-yellow flex-box">8</div></div>
+                                        </div>
+                                        <div class="box">
+                                            <button>Shared<i class="fas fa-chevron-down"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="resource-detail">
+                                        <div class="box">
+                                            <p>Stark America Amer...</p>
+                                            <p>Hired on Mar 25 20</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>Hired by James Jam...</p>
+                                            <p>Shared</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>Apr 1 20 to Apr 20 20</p>
+                                            <p>$10 Per Hour</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>30 hours per week</p>
+                                            <div class="message"><i class="far fa-envelope"></i><div class="count bg-yellow flex-box">8</div></div>
+                                        </div>
+                                        <div class="box">
+                                            <button>Shared<i class="fas fa-chevron-down"></i></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12">
-                            <div class="dashboard-resources">
+                            <div class="dashboard-resources type-share">
                                 <div class="resources-details-one flex-box">
                                     <div class="resource-image">
                                         <img class="resource-img" src="img/emp1.png" alt="">
@@ -148,6 +199,50 @@
                                         <h4 class="role">Flutter Developer</h4>
                                         <h4 class="location"><i class="fas fa-map-marker-alt"></i> Mumbai, India</h4>
                                         <h4 class="messages"><i class="far fa-comment-alt"></i> 2<span class="hires">Completed hires 2</span></h4>
+                                    </div>
+                                </div>
+                                <div class="resources-details-two">
+                                    <div class="resource-detail">
+                                        <div class="box">
+                                            <p>Stark America Amer...</p>
+                                            <p>Hired on Mar 25 20</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>Hired by James Jam...</p>
+                                            <p>Shared</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>Apr 1 20 to Apr 20 20</p>
+                                            <p>$10 Per Hour</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>30 hours per week</p>
+                                            <div class="message"><i class="far fa-envelope"></i><div class="count bg-yellow flex-box">8</div></div>
+                                        </div>
+                                        <div class="box">
+                                            <button>Shared<i class="fas fa-chevron-down"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="resource-detail">
+                                        <div class="box">
+                                            <p>Stark America Amer...</p>
+                                            <p>Hired on Mar 25 20</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>Hired by James Jam...</p>
+                                            <p>Shared</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>Apr 1 20 to Apr 20 20</p>
+                                            <p>$10 Per Hour</p>
+                                        </div>
+                                        <div class="box">
+                                            <p>30 hours per week</p>
+                                            <div class="message"><i class="far fa-envelope"></i><div class="count bg-yellow flex-box">8</div></div>
+                                        </div>
+                                        <div class="box">
+                                            <button>Shared<i class="fas fa-chevron-down"></i></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

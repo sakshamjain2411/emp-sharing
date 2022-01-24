@@ -1126,12 +1126,21 @@ button {
     .sidebar-navigation {
         ul {
             padding-left: 0px;
+            a {
+                font-weight: 400;
+            }
             li {
                 display: flex;
                 align-items: center;
                 box-shadow: #00000029 0px 0px 6px;
                 border-radius: 10px;
                 margin-bottom: 5px;
+                &.active {
+                    background-color: #24130C;
+                    p {
+                        color: white;
+                    }
+                }
                 .empty-block {
                     height: 50px;
                     width: 50px;
@@ -1140,7 +1149,7 @@ button {
                 p {
                     font-size: 19px;
                     margin-bottom: 0px;
-                    padding-left: 10px;
+                    padding-left: 20px;
                 }
             }
         }
@@ -1198,6 +1207,10 @@ button {
             justify-content: flex-start;
             align-items: flex-start;
             flex-wrap: wrap;
+            position: relative;
+            &.saved-resources {
+                padding: 55px 35px 35px;
+            }
             .resource-image {
                 text-align: center;
                 .resource-img {
@@ -1251,6 +1264,7 @@ button {
             }
             .resource-rate-per-hour {
                 margin-left: auto;
+
                 .hour-per-week {
                     font-size: 17px;
                     font-weight: 600;
@@ -1268,6 +1282,9 @@ button {
                         justify-content: center;
                         align-items: center;
                         padding: 12px;
+                        &.saved-resources {
+                            padding: 24px 12px;
+                        }
                         h4 {
                             font-size: 17px;
                             font-weight: 600;
@@ -1285,6 +1302,17 @@ button {
                         font-size: 15px;
                         padding: 0px 17px;
                     }
+                }
+            }
+            .resource-saved-banner {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #F6F9FC;
+                p {
+                    font-size: 15px;
+                    margin-bottom: 0px;
+                    padding: 10px 20px;
                 }
             }
         }
