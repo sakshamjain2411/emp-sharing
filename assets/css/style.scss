@@ -1576,6 +1576,16 @@ button {
             font-size: 16px;
             font-weight: 500;
             margin-bottom: 0px;
+            &.experience-text {
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 10px;
+            }
+            &.rate-per-hour {
+                font-size: 20px;
+                color: #22219C;
+                margin: 20px 0px;
+            }
         }
         .profile-details {
             min-height: 700px;
@@ -1645,7 +1655,8 @@ button {
             }
         }
         .profile-about,
-        .profile-reviews {
+        .profile-reviews,
+        .profile-portfolio {
             min-height: 400px;
             background-color: white;
             box-shadow: #00000040 0px 0px 12px;
@@ -1721,6 +1732,33 @@ button {
                     &.active {
                         background-color: #000;
                         color: #fff;
+                    }
+                }
+            }
+        }
+        .profile-portfolio {
+            background-color: #f6f9fc00;
+            margin-top: 25px;
+            box-shadow: none;
+            .portfolio-items {
+                display: flex;
+                .item {
+                    height: 145px;
+                    width: 157px;
+                    border-radius: 5px;
+                    margin: 10px;
+                    position: relative;
+                    img {
+                        max-width: 100%;
+                    }
+                    h2 {
+                        position: absolute;
+                        color: #fff;
+                        font-size: 16px;
+                        bottom: 0;
+                        text-align: center;
+                        width: 100%;
+                        font-weight: 400;
                     }
                 }
             }
