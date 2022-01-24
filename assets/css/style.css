@@ -1562,6 +1562,30 @@ button {
   height: 360px;
 }
 
+.dashboard-container .dashboard-resources.traded-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard-container .dashboard-resources.traded-profile .resource-traded {
+  padding: 70px 35px 25px;
+}
+
+.dashboard-container .dashboard-resources.traded-profile .resource-traded span {
+  background-color: #F6F9FC;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+}
+
+.dashboard-container .dashboard-resources.traded-profile .resources-details-one {
+  padding: 70px 35px 25px;
+}
+
 .dashboard-container .dashboard-resources .resources-details-one {
   height: 50%;
   background-color: #ffffff;
@@ -1645,6 +1669,18 @@ button {
   margin-left: 30px;
 }
 
+.dashboard-container .dashboard-resources .resources-details-one .resource-detail .profile-match-button {
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-one .resource-detail .profile-match-button span {
+  margin-left: 30px;
+}
+
 .dashboard-container .dashboard-resources .resources-details-one .resource-rate-per-hour {
   margin-left: auto;
 }
@@ -1718,6 +1754,12 @@ button {
   padding: 10px 20px;
 }
 
+.dashboard-container .dashboard-resources .resources-details-one .resource-saved-banner p span {
+  color: #22219C;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
 .dashboard-container .dashboard-resources .resources-details-two {
   height: 50%;
   background-color: #F6F9FC;
@@ -1781,6 +1823,180 @@ button {
 
 .dashboard-container .dashboard-resources .resources-details-two .resource-detail .box button i {
   margin-left: 30px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three {
+  height: 50%;
+  background-color: #E3E2FF;
+  border-radius: 10px 10px 0px 0px;
+  padding: 35px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three.saved-resources {
+  padding: 55px 35px 35px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-image {
+  text-align: center;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-image .resource-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+  -webkit-box-shadow: #00000029 0px 0px 12px;
+          box-shadow: #00000029 0px 0px 12px;
+  margin-bottom: 5px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-detail {
+  margin: 0px 20px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-detail .name {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-detail .name .experience {
+  font-size: 16px;
+  font-weight: 400;
+  float: right;
+  margin-left: 10px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-detail .role {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #22219C;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-detail .location {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-detail .messages {
+  font-size: 16px;
+  color: #22219C;
+  margin-bottom: 5px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-detail .messages .hires {
+  margin-left: 20px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-detail .message-button {
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-detail .message-button span {
+  margin-left: 30px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-detail .profile-match-button {
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-detail .profile-match-button span {
+  margin-left: 30px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-rate-per-hour {
+  margin-left: auto;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-rate-per-hour .hour-per-week {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-rate-per-hour .rate-per-hour {
+  width: 175px;
+  height: 111px;
+  background-color: #F6F9FC;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-rate-per-hour .rate-per-hour .text-content {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-rate-per-hour .rate-per-hour .text-content.saved-resources {
+  padding: 24px 12px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-rate-per-hour .rate-per-hour .text-content h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-rate-per-hour .rate-per-hour .text-content p {
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-rate-per-hour .rate-per-hour button {
+  width: 100%;
+  height: 37px;
+  border-radius: 0px;
+  font-size: 15px;
+  padding: 0px 17px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-saved-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F6F9FC;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-saved-banner p {
+  font-size: 15px;
+  margin-bottom: 0px;
+  padding: 10px 20px;
+}
+
+.dashboard-container .dashboard-resources .resources-details-three .resource-saved-banner p span {
+  color: #22219C;
+  margin-left: 20px;
+  font-weight: 600;
 }
 
 .dashboard-container .dashboard-resources .resource-skills {

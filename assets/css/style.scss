@@ -1199,6 +1199,22 @@ button {
         &.type-share {
             height: 360px;
         }
+        &.traded-profile {
+           display: flex;
+           justify-content: space-between; 
+           .resource-traded {
+            padding: 70px 35px 25px;
+               span {
+                   background-color: #F6F9FC;
+                   height: 52px;
+                   width: 52px;
+                   border-radius: 50%;
+               }
+            }    
+            .resources-details-one {
+                padding: 70px 35px 25px;
+            }
+        }
         .resources-details-one {
             height: 50%;
             background-color: #ffffff;
@@ -1261,6 +1277,16 @@ button {
                         margin-left: 30px;
                     }
                 }
+                .profile-match-button {
+                    border-radius: 5px;
+                    padding: 8px 15px;
+                    margin-top: 5px;
+                    margin-left: 10px;
+                    font-size: 15px;
+                    span {
+                        margin-left: 30px;
+                    }
+                }
             }
             .resource-rate-per-hour {
                 margin-left: auto;
@@ -1313,6 +1339,11 @@ button {
                     font-size: 15px;
                     margin-bottom: 0px;
                     padding: 10px 20px;
+                    span {
+                        color: #22219C;
+                        margin-left: 20px;
+                        font-weight: 600;
+                    }
                 }
             }
         }
@@ -1356,6 +1387,138 @@ button {
                         i {
                             margin-left: 30px;
                         }
+                    }
+                }
+            }
+        }
+        .resources-details-three {
+            height: 50%;
+            background-color: #E3E2FF;
+            border-radius: 10px 10px 0px 0px;
+            padding: 35px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            position: relative;
+            &.saved-resources {
+                padding: 55px 35px 35px;
+            }
+            .resource-image {
+                text-align: center;
+                .resource-img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    border: 5px solid white;
+                    box-shadow: #00000029 0px 0px 12px;
+                    margin-bottom: 5px;
+                }
+            }
+            .resource-detail {
+                margin: 0px 20px;
+                .name {
+                    font-size: 17px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                    .experience {
+                        font-size: 16px;
+                        font-weight: 400;
+                        float: right;
+                        margin-left: 10px;
+                    }
+                }
+                .role {
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                    color: #22219C;
+                }
+                .location {
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                }
+                .messages {
+                    font-size: 16px;
+                    color: #22219C;
+                    margin-bottom: 5px;
+                    .hires {
+                        margin-left: 20px;
+                    }
+                }
+                .message-button {
+                    border-radius: 5px;
+                    padding: 8px 15px;
+                    margin-top: 5px;
+                    font-size: 15px;
+                    span {
+                        margin-left: 30px;
+                    }
+                }
+                .profile-match-button {
+                    border-radius: 5px;
+                    padding: 8px 15px;
+                    margin-top: 5px;
+                    margin-left: 10px;
+                    font-size: 15px;
+                    span {
+                        margin-left: 30px;
+                    }
+                }
+            }
+            .resource-rate-per-hour {
+                margin-left: auto;
+
+                .hour-per-week {
+                    font-size: 17px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+                .rate-per-hour {
+                    width: 175px;
+                    height: 111px;
+                    background-color: #F6F9FC;
+                    .text-content {
+                        height: max-content;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 12px;
+                        &.saved-resources {
+                            padding: 24px 12px;
+                        }
+                        h4 {
+                            font-size: 17px;
+                            font-weight: 600;
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            font-size: 15px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                    button {
+                        width: 100%;
+                        height: 37px;
+                        border-radius: 0px;
+                        font-size: 15px;
+                        padding: 0px 17px;
+                    }
+                }
+            }
+            .resource-saved-banner {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #F6F9FC;
+                p {
+                    font-size: 15px;
+                    margin-bottom: 0px;
+                    padding: 10px 20px;
+                    span {
+                        color: #22219C;
+                        margin-left: 20px;
+                        font-weight: 600;
                     }
                 }
             }
