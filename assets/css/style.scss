@@ -609,6 +609,7 @@ button {
     min-height: 100vh;
     text-align: center;
     padding: 60px 20px;
+    z-index: 1;
     p {
         font-size: 16px;
         max-width: 650px;
@@ -910,6 +911,10 @@ button {
             }
             ul {
                 padding-left: 0px;
+                a {
+                    color: black;
+                    font-weight: 400;
+                }
                 li {
                     height: 50px;
                     padding: 0px 20px;
@@ -1536,6 +1541,57 @@ button {
     }
 }
 
+.footer {
+    .brands {
+        background-color: #F6F9FC;
+        padding: 0px 20px;
+        align-items: flex-end;
+        img {
+            width: 100%;
+            margin: 30px 0px;
+        }
+    }
+    .footer-options {
+        background-color: #24130C;
+        min-height: 450px;
+        padding: 96px 0px 0px 127px;
+        .footer-about {
+            h2 {
+                color: white;
+                font-size: 43px;
+                text-transform: uppercase;
+            }
+            h3 {
+                font-size: 24px;
+                color: white;
+                font-weight: 400;
+            }
+            p {
+                font-size: 17px;
+                color: #fff;
+            }
+            h4 {
+                font-size: 16px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+        .important-links {
+            h3 {
+                font-size: 17px;
+                color: white;
+                text-transform: uppercase;
+                margin-bottom: 22px;
+            }
+            h4 {
+                font-size: 15px;
+                color: white;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 450px) {
     .resources .content {
         padding: 40px 20px 30px;
@@ -1610,5 +1666,8 @@ button {
     }
     .user-profile .profile-container .profile-similar {
         padding: 25px 10px;
+    }
+    .footer .footer-options {
+        padding: 40px 20px;
     }
 }
