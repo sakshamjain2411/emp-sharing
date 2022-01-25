@@ -1427,6 +1427,79 @@ button {
   font-size: 16px;
 }
 
+.dashboard-post-container {
+  padding: 20px;
+}
+
+.dashboard-post-container .dashboard-post-header {
+  min-height: 70px;
+  max-width: 900px;
+  background-color: #E3E2FF;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.dashboard-post-container .dashboard-post-header h2 {
+  font-size: 19px;
+  margin-bottom: 0px;
+}
+
+.dashboard-post-container .dashboard-post-form {
+  max-width: 900px;
+  border: 1px solid #E3E2FF;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  padding: 40px 65px 120px;
+  position: relative;
+}
+
+.dashboard-post-container .dashboard-post-form h2 {
+  font-size: 19px;
+  margin-bottom: 24px;
+}
+
+.dashboard-post-container .dashboard-post-form form input[type="text"], .dashboard-post-container .dashboard-post-form form input[type="email"], .dashboard-post-container .dashboard-post-form form input[type="number"] {
+  padding: 13px 18px;
+}
+
+.dashboard-post-container .dashboard-post-form form input[type="file"] {
+  border-color: white;
+  line-height: 2rem;
+  border-radius: 10px;
+}
+
+.dashboard-post-container .dashboard-post-form form label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dashboard-post-container .dashboard-post-form form .form-check-input:checked {
+  background-color: #22219C;
+  border-color: #22219C;
+}
+
+.dashboard-post-container .dashboard-post-form form button {
+  padding: 15px 67px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.dashboard-post-container .dashboard-post-form form .inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard-post-container .dashboard-post-form form .inline input {
+  width: 300px;
+}
+
 .buttons-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2476,6 +2549,9 @@ button {
   }
   .footer .footer-options {
     padding: 40px 20px;
+  }
+  .dashboard-post-container .dashboard-post-form {
+    padding: 40px 20px 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

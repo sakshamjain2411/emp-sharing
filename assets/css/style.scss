@@ -1101,6 +1101,66 @@ button {
     }
 }
 
+.dashboard-post-container {
+    padding: 20px;
+    .dashboard-post-header {
+        min-height: 70px;
+        max-width: 900px;
+        background-color: #E3E2FF;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        h2 {
+            font-size: 19px;
+            margin-bottom: 0px;
+        }
+    }
+    
+    .dashboard-post-form {
+        max-width: 900px;
+        border: 1px solid #E3E2FF;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        padding: 40px 65px 120px;
+        position: relative;
+        h2 {
+            font-size: 19px;
+            margin-bottom: 24px;
+        }
+        form {
+            input[type="text"],input[type="email"],input[type="number"] {
+                padding: 13px 18px;
+            }
+            input[type="file"] {
+                border-color: white;
+                line-height: 2rem;
+                border-radius: 10px;
+            }
+            label {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .form-check-input:checked {
+                background-color: #22219C;
+                border-color: #22219C;
+            }
+            button {
+                padding: 15px 67px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 50%);
+            }
+            .inline {
+                display: flex;
+                justify-content: space-between;
+                input {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
 .buttons-box {
     display: flex;
     justify-content: flex-end;
@@ -1927,5 +1987,8 @@ button {
     }
     .footer .footer-options {
         padding: 40px 20px;
+    }
+    .dashboard-post-container .dashboard-post-form {
+        padding: 40px 20px 100px;
     }
 }
