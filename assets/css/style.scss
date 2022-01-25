@@ -1250,15 +1250,25 @@ button {
         .offcanvas-filter-button {
             display: none;
         }
+        button.add-portfoilio-item {
+            background-color: #22219C;
+            padding: 10px 16px;
+            color: white;
+            height: auto;
+            width: auto;
+            i {
+                margin-left: 10px;
+            }
+        }
     }
     .dashboard-resources {
         background-color: #FFFFFF;
         box-shadow: #00000029 0px 0px 6px;
         border-radius: 10px;
         margin: 20px 0px;
-        &.type-share {
-            height: 360px;
-        }
+        // &.type-share {
+        //     min-height: 360px;
+        // }
         &.traded-profile {
            display: flex;
            justify-content: space-between; 
@@ -1595,6 +1605,67 @@ button {
                 font-weight: 600;
             }
         }
+    }
+    .dashboard-resource-form {
+        margin: 20px 0px;
+        padding: 25px;
+        form {
+            label {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            input[type="text"],input[type="email"] {
+                height: 50px;
+                padding: 14px 18px;
+                border-radius: 5px;
+                border-color: #878484;
+            }
+            input[type="file"] {
+                line-height: 2rem;
+                border-radius: 10px;
+                border-color: #fff;
+            }
+            .form-check-input:checked {
+                background-color: #22219C;
+                border-color: #22219C;
+            }
+        }
+        .resource-form-buttons {
+            text-align: right;
+            button {
+                padding: 14px 54px;
+                border-radius: 5px;
+                border: 1px solid #22219C;
+                &.secondary {
+                    background-color: white;
+                    color: #22219C;
+                    margin-right: 40px;
+                }
+            }
+        }
+        .portfolio-items {
+            display: flex;  
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .item {
+                position: relative;
+                width: 276px;
+                margin-bottom: 16px;
+                h2 {
+                    text-align: center;
+                    font-size: 16px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }  
+        } 
     }
 }
 
@@ -1959,6 +2030,9 @@ button {
     }
     .dashboard-container .dashboard-filters button {
         display: none;
+    }
+    .dashboard-container .dashboard-filters button.add-portfoilio-item {
+        display: block;
     }
     .dashboard-container .dashboard-filters .offcanvas-filter-button {
         display: flex;

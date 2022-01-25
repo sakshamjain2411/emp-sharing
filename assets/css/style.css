@@ -1623,16 +1623,24 @@ button {
   display: none;
 }
 
+.dashboard-container .dashboard-filters button.add-portfoilio-item {
+  background-color: #22219C;
+  padding: 10px 16px;
+  color: white;
+  height: auto;
+  width: auto;
+}
+
+.dashboard-container .dashboard-filters button.add-portfoilio-item i {
+  margin-left: 10px;
+}
+
 .dashboard-container .dashboard-resources {
   background-color: #FFFFFF;
   -webkit-box-shadow: #00000029 0px 0px 6px;
           box-shadow: #00000029 0px 0px 6px;
   border-radius: 10px;
   margin: 20px 0px;
-}
-
-.dashboard-container .dashboard-resources.type-share {
-  height: 360px;
 }
 
 .dashboard-container .dashboard-resources.traded-profile {
@@ -2087,6 +2095,84 @@ button {
   font-weight: 600;
 }
 
+.dashboard-container .dashboard-resource-form {
+  margin: 20px 0px;
+  padding: 25px;
+}
+
+.dashboard-container .dashboard-resource-form form label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dashboard-container .dashboard-resource-form form input[type="text"], .dashboard-container .dashboard-resource-form form input[type="email"] {
+  height: 50px;
+  padding: 14px 18px;
+  border-radius: 5px;
+  border-color: #878484;
+}
+
+.dashboard-container .dashboard-resource-form form input[type="file"] {
+  line-height: 2rem;
+  border-radius: 10px;
+  border-color: #fff;
+}
+
+.dashboard-container .dashboard-resource-form form .form-check-input:checked {
+  background-color: #22219C;
+  border-color: #22219C;
+}
+
+.dashboard-container .dashboard-resource-form .resource-form-buttons {
+  text-align: right;
+}
+
+.dashboard-container .dashboard-resource-form .resource-form-buttons button {
+  padding: 14px 54px;
+  border-radius: 5px;
+  border: 1px solid #22219C;
+}
+
+.dashboard-container .dashboard-resource-form .resource-form-buttons button.secondary {
+  background-color: white;
+  color: #22219C;
+  margin-right: 40px;
+}
+
+.dashboard-container .dashboard-resource-form .portfolio-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.dashboard-container .dashboard-resource-form .portfolio-items .item {
+  position: relative;
+  width: 276px;
+  margin-bottom: 16px;
+}
+
+.dashboard-container .dashboard-resource-form .portfolio-items .item h2 {
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.dashboard-container .dashboard-resource-form .portfolio-items .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 .user-profile .profile-background {
   max-width: 1700px;
   min-height: 260px;
@@ -2519,6 +2605,9 @@ button {
   }
   .dashboard-container .dashboard-filters button {
     display: none;
+  }
+  .dashboard-container .dashboard-filters button.add-portfoilio-item {
+    display: block;
   }
   .dashboard-container .dashboard-filters .offcanvas-filter-button {
     display: -webkit-box;
