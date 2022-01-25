@@ -1972,7 +1972,7 @@ button {
         .project-header {
             background-color: #22219C;
             color: white;
-            height: 118px;
+            min-height: 118px;
             padding: 20px 96px 0px;
             position: relative;
             h2 {
@@ -1985,11 +1985,13 @@ button {
                 font-weight: 600;
                 color: #A4A4FF;
                 display: flex;
+                flex-wrap: wrap;
                 position: absolute;
                 bottom: 0;
                 .item {
                     margin-right: 55px;
                     padding-bottom: 13px;
+                    cursor: pointer;
                     &.active {
                         color: white;
                         border-bottom: 5px solid white;
@@ -2023,6 +2025,7 @@ button {
                 p {
                     font-size: 16px;
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
                     span {
                         margin: 0px 10px;
@@ -2041,6 +2044,7 @@ button {
                 .details {
                     display: flex;
                     justify-content: space-between;
+                    flex-wrap: wrap;
                     .box1 {
                         display: flex;
                         .item1 {
@@ -2101,6 +2105,87 @@ button {
                             font-size: 16px;
                             margin-top: 10px;
                             text-align: center;
+                        }
+                    }
+                }
+            }
+            .project-payment {
+                min-height: 278px;
+                box-shadow: #00000029 0px 3px 6px;
+                border-radius: 10px;
+                padding: 43px 95px;
+                p 
+                {
+                    font-size: 16px;
+                }
+                .details {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .box1 {
+                        display: flex;
+                        .item1 {
+                            flex-direction: column;
+                            img {
+                                width: 104px;
+                                height: 104px;
+                                border-radius: 5px;
+                            }
+                        }
+                        .item2 {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            margin-left: 40px;
+                            h2 {
+                                font-size: 23px;
+                            }
+                            h3 {
+                                font-size: 20px;
+                                color: #5B5959;
+                                font-weight: 400;
+                                span {
+                                    margin-right: 10px;
+                                }
+                            }
+                            h4 {
+                                font-size: 16px;
+                                span {
+                                    margin-right: 10px;
+                                }
+                            }
+                            .price {
+                                color: #15CE73;
+                                color: 25px;
+                            }
+                        }
+                    }
+                    .box2 {
+                        button {
+                            color: #000;
+                            border-radius: 2px;
+                            margin-left: 15px;
+                        }
+                        .bg-new-green {
+                            background-color: #AAFFD5;
+                        }
+                        .bg-new-purple {
+                            background-color: #A4A4FF;
+                        }
+                        p {
+                            font-size: 16px;
+                            margin-top: 10px;
+                            text-align: center;
+                        }
+                    }
+                }
+                .payment-summary {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .item {
+                        margin-right: 180px;
+                        text-align: center;
+                        p {
+                            margin-bottom: 10px;
                         }
                     }
                 }
@@ -2273,5 +2358,39 @@ button {
     .nav-form.flex-box {
         flex-wrap: wrap;
         display: none;
+    }
+    .project .project-container .project-header .project-navigation {
+        position: relative;
+    }
+    .project .project-container .project-body {
+        margin: 20px;
+    }
+    .project .project-container .project-body .project-payment {
+        padding: 20px;
+    }
+    .project .project-container .project-header {
+        padding: 20px;
+    }
+    .project .project-container .project-body .project-payment .payment-summary .item {
+        margin-right: 20px;
+    }
+    .project .project-container .project-body .project-payment .payment-summary,
+    .project .project-container .project-body .project-proposal .details {
+        justify-content: center;
+    }
+    .project .project-container .project-body .project-proposal .details .box1 .item2 h2,
+    .project .project-container .project-body .project-payment .details .box1 .item2 h2 {
+        font-size: 18px;
+    }
+    .project .project-container .project-body .project-proposal .details .box1 .item2 h3,
+    .project .project-container .project-body .project-payment .details .box1 .item2 h3 {
+        font-size: 16px;
+    }
+    .project .project-container .project-header .project-navigation {
+        align-items: center;
+        justify-content: center;
+    }
+    .project .project-container .project-header .project-navigation .item {
+        margin: 5px 15px 5px 0px;
     }
 }

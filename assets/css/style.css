@@ -2547,7 +2547,7 @@ button {
 .project .project-container .project-header {
   background-color: #22219C;
   color: white;
-  height: 118px;
+  min-height: 118px;
   padding: 20px 96px 0px;
   position: relative;
 }
@@ -2565,6 +2565,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: absolute;
   bottom: 0;
 }
@@ -2572,6 +2574,7 @@ button {
 .project .project-container .project-header .project-navigation .item {
   margin-right: 55px;
   padding-bottom: 13px;
+  cursor: pointer;
 }
 
 .project .project-container .project-header .project-navigation .item.active {
@@ -2620,6 +2623,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2648,6 +2653,8 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .project .project-container .project-body .project-proposal .details .box1 {
@@ -2733,6 +2740,123 @@ button {
   font-size: 16px;
   margin-top: 10px;
   text-align: center;
+}
+
+.project .project-container .project-body .project-payment {
+  min-height: 278px;
+  -webkit-box-shadow: #00000029 0px 3px 6px;
+          box-shadow: #00000029 0px 3px 6px;
+  border-radius: 10px;
+  padding: 43px 95px;
+}
+
+.project .project-container .project-body .project-payment p {
+  font-size: 16px;
+}
+
+.project .project-container .project-body .project-payment .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project .project-container .project-body .project-payment .details .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project .project-container .project-body .project-payment .details .box1 .item1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project .project-container .project-body .project-payment .details .box1 .item1 img {
+  width: 104px;
+  height: 104px;
+  border-radius: 5px;
+}
+
+.project .project-container .project-body .project-payment .details .box1 .item2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 40px;
+}
+
+.project .project-container .project-body .project-payment .details .box1 .item2 h2 {
+  font-size: 23px;
+}
+
+.project .project-container .project-body .project-payment .details .box1 .item2 h3 {
+  font-size: 20px;
+  color: #5B5959;
+  font-weight: 400;
+}
+
+.project .project-container .project-body .project-payment .details .box1 .item2 h3 span {
+  margin-right: 10px;
+}
+
+.project .project-container .project-body .project-payment .details .box1 .item2 h4 {
+  font-size: 16px;
+}
+
+.project .project-container .project-body .project-payment .details .box1 .item2 h4 span {
+  margin-right: 10px;
+}
+
+.project .project-container .project-body .project-payment .details .box1 .item2 .price {
+  color: #15CE73;
+  color: 25px;
+}
+
+.project .project-container .project-body .project-payment .details .box2 button {
+  color: #000;
+  border-radius: 2px;
+  margin-left: 15px;
+}
+
+.project .project-container .project-body .project-payment .details .box2 .bg-new-green {
+  background-color: #AAFFD5;
+}
+
+.project .project-container .project-body .project-payment .details .box2 .bg-new-purple {
+  background-color: #A4A4FF;
+}
+
+.project .project-container .project-body .project-payment .details .box2 p {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.project .project-container .project-body .project-payment .payment-summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project .project-container .project-body .project-payment .payment-summary .item {
+  margin-right: 180px;
+  text-align: center;
+}
+
+.project .project-container .project-body .project-payment .payment-summary .item p {
+  margin-bottom: 10px;
 }
 
 .footer .brands {
@@ -2912,6 +3036,46 @@ button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: none;
+  }
+  .project .project-container .project-header .project-navigation {
+    position: relative;
+  }
+  .project .project-container .project-body {
+    margin: 20px;
+  }
+  .project .project-container .project-body .project-payment {
+    padding: 20px;
+  }
+  .project .project-container .project-header {
+    padding: 20px;
+  }
+  .project .project-container .project-body .project-payment .payment-summary .item {
+    margin-right: 20px;
+  }
+  .project .project-container .project-body .project-payment .payment-summary,
+  .project .project-container .project-body .project-proposal .details {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project .project-container .project-body .project-proposal .details .box1 .item2 h2,
+  .project .project-container .project-body .project-payment .details .box1 .item2 h2 {
+    font-size: 18px;
+  }
+  .project .project-container .project-body .project-proposal .details .box1 .item2 h3,
+  .project .project-container .project-body .project-payment .details .box1 .item2 h3 {
+    font-size: 16px;
+  }
+  .project .project-container .project-header .project-navigation {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project .project-container .project-header .project-navigation .item {
+    margin: 5px 15px 5px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
