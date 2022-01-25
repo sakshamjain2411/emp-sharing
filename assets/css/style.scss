@@ -921,13 +921,25 @@ button {
             height: 50px;
             padding: 0px 30px;
         }
+        .location-image {
+            position: relative;
+            left: -40px;
+        }
     }
     .nav-icons {
         margin-left: 50px;
         margin-bottom: 20px;
-        span {
+        display: flex;
+        a {
+            color: black;
+        }
+        a:hover {
+            color: #22219C;
+        }
+        div {
             padding: 0px 15px;
             font-size: 18px;
+            position: relative;
             .counter {
                 position: absolute;
                 height: 18px;
@@ -936,6 +948,8 @@ button {
                 font-size: 12px;
                 color: white;
                 border-radius: 50%;
+                top: -5px;
+                right: 5px;
             }
         }
     }
@@ -2137,5 +2151,9 @@ button {
     }
     .dashboard-post-container .dashboard-post-form {
         padding: 40px 20px 100px;
+    }
+    .nav-form.flex-box {
+        flex-wrap: wrap;
+        display: none;
     }
 }

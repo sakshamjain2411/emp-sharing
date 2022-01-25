@@ -1213,17 +1213,34 @@ button {
   padding: 0px 30px;
 }
 
+.dashboard-navbar form .location-image {
+  position: relative;
+  left: -40px;
+}
+
 .dashboard-navbar .nav-icons {
   margin-left: 50px;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.dashboard-navbar .nav-icons span {
+.dashboard-navbar .nav-icons a {
+  color: black;
+}
+
+.dashboard-navbar .nav-icons a:hover {
+  color: #22219C;
+}
+
+.dashboard-navbar .nav-icons div {
   padding: 0px 15px;
   font-size: 18px;
+  position: relative;
 }
 
-.dashboard-navbar .nav-icons span .counter {
+.dashboard-navbar .nav-icons div .counter {
   position: absolute;
   height: 18px;
   width: 18px;
@@ -1231,6 +1248,8 @@ button {
   font-size: 12px;
   color: white;
   border-radius: 50%;
+  top: -5px;
+  right: 5px;
 }
 
 .dashboard-navbar .navbar-nav {
@@ -2724,6 +2743,11 @@ button {
   }
   .dashboard-post-container .dashboard-post-form {
     padding: 40px 20px 100px;
+  }
+  .nav-form.flex-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
