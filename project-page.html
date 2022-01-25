@@ -17,10 +17,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dropshadow">
         <div class="container-fluid">
             <div class="logo">
-                <img src="img/logo.svg" alt="" srcset="" class="logo">
+                <a href="home.html"><img src="img/logo.svg" alt="" srcset="" class="logo"></a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -32,13 +32,31 @@
                     <form action="">
                         <input type="text" placeholder="Android developer, UI Designer...">
                         <input type="text" placeholder="Location">
+                        <img class="location-image" src="img/location.png" alt="" srcset="">
                         <button><i class="fas fa-search"></i></button>
                     </form>
                     <div class="nav-icons">
-                        <span><i class="far fa-envelope"></i></span>
-                        <span><i class="far fa-question-circle"></i></span>
-                        <span><i class="far fa-bell"></i></span>
-                        <span><i class="far fa-user"></i></span>
+                        <a href="">
+                            <div>
+                                <i class="far fa-envelope"></i>
+                                <span class="counter flex-box">2</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div><i class="far fa-question-circle"></i></div>
+                        </a>
+                        <a href="">
+                            <div>
+                                <i class="far fa-bell"></i>
+                                <span class="counter flex-box">2</span>
+                            </div>
+                        </a>
+                        <a href="employee-profile.html">
+                            <div><i class="far fa-user"></i></div>
+                        </a>
+                        <a href="">
+                            <div><i class="fas fa-sign-out-alt"></i></div>
+                        </a>
                     </div>
                 </div>
                 <ul class="navbar-nav mb-2 mb-lg-0">
@@ -46,13 +64,13 @@
                         <a class="nav-link active" aria-current="page" href="dashboard.html">DASHBOARD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="dashboard-shared-resources.html">I WANT TO SHARE</a>
+                        <a class="nav-link" aria-current="page" href="dashboard-share.html">I WANT TO SHARE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="dashboard-active-resources.html">I WANT TO HIRE</a>
+                        <a class="nav-link" aria-current="page" href="dashboard-hire.html">I WANT TO HIRE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="dashboard-traded-profile.html">I WANT TO TRADE</a>
+                        <a class="nav-link" aria-current="page" href="dashboard-trade.html">I WANT TO TRADE</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="dashboard-post-job.html">POST JOB</a>
@@ -77,7 +95,7 @@
                     <div class="item">Task</div>
                 </div>
             </div>
-            <div class="project-body">
+            <div class="project-body" id="project-detaisl">
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="project-details-item">
@@ -85,10 +103,100 @@
                                 <h2>Project details <span><i class="fas fa-pen"></i></span></h2>
                                 <h2>$200 - $230</h2>
                             </div>
+                            <div class="project-content">
+                                <p>1) Lorem ipsum dolo .</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>1) Lorem ipsum dolo .</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>1) Lorem ipsum dolo .</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <hr>
+                                <p>Technology used</p>
+                                <p>
+                                    <span>Kotlin</span>
+                                    <span>Java</span>
+                                    <span>Kotlin</span>
+                                    <span>Java</span>
+                                    <span>Kotlin</span>
+                                    <span>Java</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="project-details-item"></div>
+                        <div class="project-details-item">
+                            <div class="heading">
+                                <h2>About the Client</h2>
+                            </div>
+                            <div class="project-content">
+                                <p><span><i class="fas fa-map-marker-alt"></i></span>Mumbai, India</p>
+                                <p><span><i class="far fa-user"></i></span><img src="img/ionic-ios-star.png" alt=""> 4.5 (121 Reviews)</p>
+                                <p><span><i class="far fa-clock"></i></span>Membership Since 24 Nov, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="project-proposal">
+                            <div class="details">
+                                <div class="box1">
+                                    <div class="item1 flex-box">
+                                        <img src="img/emp2.png" alt="">
+                                        <div class="rating flex-box"><span></span>4.5</div>
+                                        <p class="mt-2">(121 Reviews)</p>
+                                    </div>
+                                    <div class="item2 flex-box">
+                                        <h2>Aakash Valmiki</h2>
+                                        <h3><span><i class="fas fa-map-marker-alt"></i></span>Mumbai, India</h3>
+                                        <h4><span><i class="far fa-clock"></i></span>20 Days</h4>
+                                        <h2 class="price">$200USD</h2>
+                                    </div>
+                                </div>
+                                <div class="box2">
+                                    <div class="button-box">
+                                        <button class="bg-new-green">Chat</button>
+                                        <button class="bg-new-purple">Assign</button>
+                                    </div>
+                                    <p>Replies within a few hours</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div class="project-proposal">
+                            <div class="details">
+                                <div class="box1">
+                                    <div class="item1 flex-box">
+                                        <img src="img/emp2.png" alt="">
+                                        <div class="rating flex-box"><span></span>4.5</div>
+                                        <p class="mt-2">(121 Reviews)</p>
+                                    </div>
+                                    <div class="item2 flex-box">
+                                        <h2>Aakash Valmiki</h2>
+                                        <h3><span><i class="fas fa-map-marker-alt"></i></span>Mumbai, India</h3>
+                                        <h4><span><i class="far fa-clock"></i></span>20 Days</h4>
+                                        <h2 class="price">$200USD</h2>
+                                    </div>
+                                </div>
+                                <div class="box2">
+                                    <div class="button-box">
+                                        <button class="bg-new-green">Chat</button>
+                                        <button class="bg-new-purple">Assign</button>
+                                    </div>
+                                    <p>Replies within a few hours</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="">Read more</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
