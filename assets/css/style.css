@@ -3032,6 +3032,7 @@ button {
 .owl-carousel.brands-owl-carousel {
   position: relative;
   max-width: 1200px;
+  width: 85%;
 }
 
 .owl-carousel.brands-owl-carousel .owl-nav {
