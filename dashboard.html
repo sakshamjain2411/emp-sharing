@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,7 +24,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dropshadow">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light navbar-dropshadow">
         <div class="container-fluid">
             <div class="logo">
                 <a href="home.html"><img src="img/logo.svg" alt="" srcset="" class="logo"></a>
@@ -204,17 +211,17 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="dashboard-inner-navigation">
-                        <div class="links active">
-                            <a href="">JOBS</a>
+                        <div class="links active" id="1">
+                            <a>JOBS</a>
                             <hr>
                         </div>
-                        <div class="links">
-                            <a href="">PROJECTS</a>
+                        <div class="links" id="2">
+                            <a>PROJECTS</a>
                             <hr>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 scroll-x">
+                <div class="col-lg-12 scroll-x" id="jobsTable">
                     <table class="table table-borderless">
                         <thead>
                             <tr>
@@ -276,69 +283,248 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="col-lg-12 scroll-x not-visible" id="projectsTable">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th>Looking for?</th>
+                                <th></th>
+                                <th>Proposals</th>
+                                <th>BUDGET ($)</th>
+                                <th>DURATION</th>
+                                <th>Application Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Website Developer<br> Android App Developer</td>
+                                <td><i class="far fa-eye"></i></td>
+                                <td class="action"><p class="mx-auto">View Applicant (12)</p></td>
+                                <td>230</td>
+                                <td>30 Days</td>
+                                <td class="action"><button class="open">Open<span><i class="fas fa-chevron-down"></i></span></button></td>
+                            </tr>
+                            <tr>
+                                <td>Website Developer<br> Android App Developer</td>
+                                <td><i class="far fa-eye"></i></td>
+                                <td class="action"><p class="mx-auto">View Applicant (12)</p></td>
+                                <td>230</td>
+                                <td>30 Days</td>
+                                <td class="action"><button class="open">Open<span><i class="fas fa-chevron-down"></i></span></button></td>
+                            </tr>
+                            <tr>
+                                <td>Website Developer<br> Android App Developer</td>
+                                <td><i class="far fa-eye"></i></td>
+                                <td class="action"><p class="mx-auto">View Applicant (12)</p></td>
+                                <td>230</td>
+                                <td>30 Days</td>
+                                <td class="action"><button class="open">Open<span><i class="fas fa-chevron-down"></i></span></button></td>
+                            </tr>
+                            <tr>
+                                <td>Website Developer<br> Android App Developer</td>
+                                <td><i class="far fa-eye"></i></td>
+                                <td class="action"><p class="mx-auto">View Applicant (12)</p></td>
+                                <td>230</td>
+                                <td>30 Days</td>
+                                <td class="action"><button class="close">Close<span><i class="fas fa-chevron-down"></i></span></button></td>
+                            </tr>
+                            <tr>
+                                <td>Website Developer<br> Android App Developer</td>
+                                <td><i class="far fa-eye"></i></td>
+                                <td class="action"><p class="mx-auto">View Applicant (12)</p></td>
+                                <td>230</td>
+                                <td>30 Days</td>
+                                <td class="action"><button class="open">Open<span><i class="fas fa-chevron-down"></i></span></button></td>
+                            </tr>
+                            <tr>
+                                <td>Website Developer<br> Android App Developer</td>
+                                <td><i class="far fa-eye"></i></td>
+                                <td class="action"><p class="mx-auto">View Applicant (12)</p></td>
+                                <td>230</td>
+                                <td>30 Days</td>
+                                <td class="action"><button class="open">Open<span><i class="fas fa-chevron-down"></i></span></button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <div class="table-pagination">
+                                        <button><i class="fas fa-long-arrow-alt-left"></i></button>
+                                        <button class="active">1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                        <button>4</button>
+                                        <button><i class="fas fa-long-arrow-alt-right"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <div class="col-lg-12 recent-employee">
                     <h3>RECENT ADDED EMPLOYEES</h3>
                     <div class="row">
-                        <div class="col-lg-4">
-                            <div class="content-box">
-                                <div class="image-holder">
-                                    <img src="img/emp1.png" alt="">
-                                </div>
-                                <div class="content-holder">
-                                    <div class="main-details">
-                                        <h4 class="name">Aakash Valmiki</h4>
-                                        <h4 class="designation">UI Deigner</h4>
-                                        <h4 class="experience">2 Years of Exp</h4>
-                                        <h4 class="resource mt-3">Active Resource</h4>
-                                        <h4 class="expire">Expire on 20 Nov, 2022</h4>
+                        <div class="owl-carousel owl-theme recent-employee-owl-carousel">
+                            <div class="recent-employee-carousel-item">
+                                <div class="content-box">
+                                    <div class="image-holder">
+                                        <img src="img/emp1.png" alt="">
                                     </div>
-                                    <div class="inner">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="content-box">
-                                <div class="image-holder">
-                                    <img src="img/emp1.png" alt="">
-                                </div>
-                                <div class="content-holder">
-                                    <div class="main-details">
-                                        <h4 class="name">Aakash Valmiki</h4>
-                                        <h4 class="designation">UI Deigner</h4>
-                                        <h4 class="experience">2 Years of Exp</h4>
-                                        <h4 class="resource mt-3">Active Resource</h4>
-                                        <h4 class="expire">Expire on 20 Nov, 2022</h4>
-                                    </div>
-                                    <div class="inner">
+                                    <div class="content-holder">
+                                        <div class="main-details">
+                                            <h4 class="name">Aakash Valmiki</h4>
+                                            <h4 class="designation">UI Deigner</h4>
+                                            <h4 class="experience">2 Years of Exp</h4>
+                                            <h4 class="resource mt-3">Active Resource</h4>
+                                            <h4 class="expire">Expire on 20 Nov, 2022</h4>
+                                        </div>
+                                        <div class="inner">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="content-box">
-                                <div class="image-holder">
-                                    <img src="img/emp1.png" alt="">
-                                </div>
-                                <div class="content-holder">
-                                    <div class="main-details">
-                                        <h4 class="name">Aakash Valmiki</h4>
-                                        <h4 class="designation">UI Deigner</h4>
-                                        <h4 class="experience">2 Years of Exp</h4>
-                                        <h4 class="resource mt-3">Active Resource</h4>
-                                        <h4 class="expire">Expire on 20 Nov, 2022</h4>
+                            </div>  
+                            <div class="recent-employee-carousel-item">
+                                <div class="content-box">
+                                    <div class="image-holder">
+                                        <img src="img/emp1.png" alt="">
                                     </div>
-                                    <div class="inner">
+                                    <div class="content-holder">
+                                        <div class="main-details">
+                                            <h4 class="name">Aakash Valmiki</h4>
+                                            <h4 class="designation">UI Deigner</h4>
+                                            <h4 class="experience">2 Years of Exp</h4>
+                                            <h4 class="resource mt-3">Active Resource</h4>
+                                            <h4 class="expire">Expire on 20 Nov, 2022</h4>
+                                        </div>
+                                        <div class="inner">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="navigation-dots flex-box">
-                                <div class="dot"></div>
-                                <div class="dot bg-yellow"></div>
-                                <div class="dot"></div>
-                            </div>
+                            </div>  
+                            <div class="recent-employee-carousel-item">
+                                <div class="content-box">
+                                    <div class="image-holder">
+                                        <img src="img/emp1.png" alt="">
+                                    </div>
+                                    <div class="content-holder">
+                                        <div class="main-details">
+                                            <h4 class="name">Aakash Valmiki</h4>
+                                            <h4 class="designation">UI Deigner</h4>
+                                            <h4 class="experience">2 Years of Exp</h4>
+                                            <h4 class="resource mt-3">Active Resource</h4>
+                                            <h4 class="expire">Expire on 20 Nov, 2022</h4>
+                                        </div>
+                                        <div class="inner">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="recent-employee-carousel-item">
+                                <div class="content-box">
+                                    <div class="image-holder">
+                                        <img src="img/emp1.png" alt="">
+                                    </div>
+                                    <div class="content-holder">
+                                        <div class="main-details">
+                                            <h4 class="name">Aakash Valmiki</h4>
+                                            <h4 class="designation">UI Deigner</h4>
+                                            <h4 class="experience">2 Years of Exp</h4>
+                                            <h4 class="resource mt-3">Active Resource</h4>
+                                            <h4 class="expire">Expire on 20 Nov, 2022</h4>
+                                        </div>
+                                        <div class="inner">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="recent-employee-carousel-item">
+                                <div class="content-box">
+                                    <div class="image-holder">
+                                        <img src="img/emp1.png" alt="">
+                                    </div>
+                                    <div class="content-holder">
+                                        <div class="main-details">
+                                            <h4 class="name">Aakash Valmiki</h4>
+                                            <h4 class="designation">UI Deigner</h4>
+                                            <h4 class="experience">2 Years of Exp</h4>
+                                            <h4 class="resource mt-3">Active Resource</h4>
+                                            <h4 class="expire">Expire on 20 Nov, 2022</h4>
+                                        </div>
+                                        <div class="inner">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="recent-employee-carousel-item">
+                                <div class="content-box">
+                                    <div class="image-holder">
+                                        <img src="img/emp1.png" alt="">
+                                    </div>
+                                    <div class="content-holder">
+                                        <div class="main-details">
+                                            <h4 class="name">Aakash Valmiki</h4>
+                                            <h4 class="designation">UI Deigner</h4>
+                                            <h4 class="experience">2 Years of Exp</h4>
+                                            <h4 class="resource mt-3">Active Resource</h4>
+                                            <h4 class="expire">Expire on 20 Nov, 2022</h4>
+                                        </div>
+                                        <div class="inner">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="recent-employee-carousel-item">
+                                <div class="content-box">
+                                    <div class="image-holder">
+                                        <img src="img/emp1.png" alt="">
+                                    </div>
+                                    <div class="content-holder">
+                                        <div class="main-details">
+                                            <h4 class="name">Aakash Valmiki</h4>
+                                            <h4 class="designation">UI Deigner</h4>
+                                            <h4 class="experience">2 Years of Exp</h4>
+                                            <h4 class="resource mt-3">Active Resource</h4>
+                                            <h4 class="expire">Expire on 20 Nov, 2022</h4>
+                                        </div>
+                                        <div class="inner">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="recent-employee-carousel-item">
+                                <div class="content-box">
+                                    <div class="image-holder">
+                                        <img src="img/emp1.png" alt="">
+                                    </div>
+                                    <div class="content-holder">
+                                        <div class="main-details">
+                                            <h4 class="name">Aakash Valmiki</h4>
+                                            <h4 class="designation">UI Deigner</h4>
+                                            <h4 class="experience">2 Years of Exp</h4>
+                                            <h4 class="resource mt-3">Active Resource</h4>
+                                            <h4 class="expire">Expire on 20 Nov, 2022</h4>
+                                        </div>
+                                        <div class="inner">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="recent-employee-carousel-item">
+                                <div class="content-box">
+                                    <div class="image-holder">
+                                        <img src="img/emp1.png" alt="">
+                                    </div>
+                                    <div class="content-holder">
+                                        <div class="main-details">
+                                            <h4 class="name">Aakash Valmiki</h4>
+                                            <h4 class="designation">UI Deigner</h4>
+                                            <h4 class="experience">2 Years of Exp</h4>
+                                            <h4 class="resource mt-3">Active Resource</h4>
+                                            <h4 class="expire">Expire on 20 Nov, 2022</h4>
+                                        </div>
+                                        <div class="inner">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
                         </div>
                     </div>
                 </div>
@@ -350,7 +536,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="brands flex-box">
-                    <img src="img/brands.png" alt="" srcset="">
+                    <div class="owl-carousel owl-theme brands-owl-carousel">
+                        <div class="item"><img src="img/brands01.png" alt="" srcset=""></div>
+                        <div class="item"><img src="img/brands02.png" alt="" srcset=""></div>
+                        <div class="item"><img src="img/brands01.png" alt="" srcset=""></div>
+                        <div class="item"><img src="img/brands02.png" alt="" srcset=""></div>
+                        <div class="item"><img src="img/brands01.png" alt="" srcset=""></div>
+                    </div>
                 </div>
             </div>
             <div class="row footer-options">
@@ -402,9 +594,79 @@
         </div>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel.recent-employee-owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+        $('.owl-carousel.brands-owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay:true,
+            autoplayTimeout:5000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+    <script>
+        let shareTab = document.querySelectorAll(".dashboard-inner-navigation .links").forEach(item => {
+            item.addEventListener('click', () => {
+                let ID = item.id;
+                this.disableAllShareTabs(ID);
+                item.classList.toggle("active")
+            })
+        })
+
+
+        let projectsTable = document.querySelector("#projectsTable");
+        let jobsTable = document.querySelector("#jobsTable");
+
+        function disableAllShareTabs(ID) {
+            document.querySelectorAll(".dashboard-inner-navigation .links").forEach(item => {
+                item.classList.remove("active");
+            });
+            if (ID == 1) {
+                jobsTable.classList.remove("not-visible");
+                projectsTable.classList.add("not-visible");
+            }
+            else if (ID == 2) {
+                jobsTable.classList.add("not-visible");
+                projectsTable.classList.remove("not-visible");
+            }
+        }
+    </script>
 </body>
 
 </html>

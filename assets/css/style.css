@@ -420,7 +420,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px 80px;
+  padding: 50px 60px;
 }
 
 .resources .icon-box span {
@@ -489,6 +489,7 @@ button {
   color: #22219C;
   padding: 0px;
   margin-left: 20px;
+  display: none;
 }
 
 .top-rated-employee .image-box {
@@ -722,6 +723,10 @@ button {
   color: #878484;
 }
 
+.testimonial-content .testimonail-data .icon {
+  width: 50px;
+}
+
 .testimonial-content .testimonail-data .client {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,7 +754,11 @@ button {
   padding-left: 10px;
 }
 
-.testimonial-content .testimonail-data .testimonail-data img {
+.testimonial-content .testimonail-data .client .client-image {
+  width: 50px;
+}
+
+.testimonial-content .testimonail-data .testimonail-data .client img {
   height: 50px;
   width: 50px;
 }
@@ -1361,6 +1370,23 @@ button {
   max-width: 250px;
 }
 
+.dashboard .container .table tbody tr td button {
+  color: black;
+  padding: 4px 14px;
+}
+
+.dashboard .container .table tbody tr td button span {
+  margin-left: 20px;
+}
+
+.dashboard .container .table tbody tr td button.open {
+  background-color: #AAFFD5;
+}
+
+.dashboard .container .table tbody tr td button.close {
+  background-color: #FFAAAE;
+}
+
 .dashboard .container .table tbody tr td .table-pagination button {
   background-color: white;
   border: 1px solid #000;
@@ -1387,6 +1413,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .dashboard .container .recent-employee .content-box .image-holder img {
@@ -2944,6 +2971,139 @@ button {
   color: #22219C;
 }
 
+.owl-carousel.top-employee-owl-carousel {
+  position: relative;
+}
+
+.owl-carousel.top-employee-owl-carousel .owl-nav {
+  display: block !important;
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+
+.owl-carousel.top-employee-owl-carousel .owl-nav button {
+  background-color: #F6F9FC;
+  height: 44px;
+  width: 44px;
+  color: #22219C;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+.owl-carousel.top-employee-owl-carousel .owl-nav button.owl-next span, .owl-carousel.top-employee-owl-carousel .owl-nav button.owl-prev span {
+  color: #22219C;
+  font-size: 32px;
+}
+
+.owl-carousel.top-employee-owl-carousel .owl-dots {
+  display: none;
+}
+
+.owl-carousel.testimonial-owl-carousel {
+  position: relative;
+}
+
+.owl-carousel.testimonial-owl-carousel .owl-nav {
+  display: block !important;
+  position: absolute;
+  top: -60px;
+  right: 0;
+}
+
+.owl-carousel.testimonial-owl-carousel .owl-nav button {
+  background-color: #F6F9FC;
+  height: 44px;
+  width: 44px;
+  color: #22219C;
+  padding: 0px;
+  margin-left: 90px;
+}
+
+.owl-carousel.testimonial-owl-carousel .owl-nav button.owl-next span, .owl-carousel.testimonial-owl-carousel .owl-nav button.owl-prev span {
+  color: #22219C;
+  font-size: 32px;
+}
+
+.owl-carousel.testimonial-owl-carousel .owl-dots {
+  display: none;
+}
+
+.owl-carousel.brands-owl-carousel {
+  position: relative;
+  max-width: 1200px;
+}
+
+.owl-carousel.brands-owl-carousel .owl-nav {
+  display: block !important;
+}
+
+.owl-carousel.brands-owl-carousel .owl-nav button {
+  background-color: #F6F9FC;
+  height: 44px;
+  width: 44px;
+  color: #22219C;
+  border: 1px solid #22219C;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.owl-carousel.brands-owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
+}
+
+.owl-carousel.brands-owl-carousel .owl-nav button.owl-next span {
+  color: #22219C;
+  font-size: 32px;
+}
+
+.owl-carousel.brands-owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
+}
+
+.owl-carousel.brands-owl-carousel .owl-nav button.owl-prev span {
+  color: #22219C;
+  font-size: 32px;
+}
+
+.owl-carousel.brands-owl-carousel .owl-dots {
+  display: none;
+}
+
+.owl-carousel.recent-employee-owl-carousel {
+  position: relative;
+}
+
+.owl-carousel.recent-employee-owl-carousel .owl-dots {
+  margin: 30px 0px !important;
+}
+
+.owl-carousel.recent-employee-owl-carousel .owl-dots .owl-dot span {
+  height: 14px;
+  width: 14px;
+  background-color: #878484;
+}
+
+.owl-carousel.recent-employee-owl-carousel .owl-dots .owl-dot.active span {
+  background-color: #FDB828;
+}
+
 @media only screen and (max-width: 450px) {
   .resources .content {
     padding: 40px 20px 30px;
@@ -3032,11 +3192,6 @@ button {
   .dashboard-post-container .dashboard-post-form {
     padding: 40px 20px 100px;
   }
-  .nav-form.flex-box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: none;
-  }
   .project .project-container .project-header .project-navigation {
     position: relative;
   }
@@ -3076,6 +3231,47 @@ button {
   }
   .project .project-container .project-header .project-navigation .item {
     margin: 5px 15px 5px 0px;
+  }
+  .owl-carousel.brands-owl-carousel .owl-nav {
+    display: none !important;
+  }
+  .navbar-nav {
+    margin-top: 10px;
+    text-align: right;
+  }
+  .navbar .btn {
+    margin: 5px 0px;
+  }
+  .dashboard-navbar .navbar-nav {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .nav-form.flex-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dashboard-navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .dashboard-navbar form {
+    display: none;
+  }
+  .dashboard-navbar form input[type="text"] {
+    height: 30px;
+  }
+  .dashboard-navbar form input[type="text"]:first-child {
+    width: auto;
+  }
+  .dashboard-navbar .nav-icons {
+    margin-top: 10px;
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
